@@ -40,10 +40,10 @@ export const metadata: Metadata = {
 
   // ── Title Strategy ───────────────────────────────────────────────────
   // template: child pages export { title: "Privacy Policy" }
-  //           → renders as "Privacy Policy | Quelldesk"
+  //           → renders as "Privacy Policy | QuellDesk"
   // default: used when no child page overrides the title
   title: {
-    default: `${SEO_CONFIG.siteName} — ${SEO_CONFIG.tagline}`,
+    default: SEO_CONFIG.siteName,
     template: `%s | ${SEO_CONFIG.siteName}`,
   },
 
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     locale: SEO_CONFIG.locale,
     url: SEO_CONFIG.domain,
     siteName: SEO_CONFIG.siteName,
-    title: `${SEO_CONFIG.siteName} — ${SEO_CONFIG.tagline}`,
+    title: SEO_CONFIG.siteName,
     description: SEO_CONFIG.description,
     images: [
       {
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
   // ── Twitter Card ─────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    title: `${SEO_CONFIG.siteName} — ${SEO_CONFIG.tagline}`,
+    title: SEO_CONFIG.siteName,
     description: SEO_CONFIG.description,
     images: [SEO_CONFIG.ogImage],
     creator: SEO_CONFIG.twitterHandle,

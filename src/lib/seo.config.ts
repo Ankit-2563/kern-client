@@ -7,7 +7,7 @@
 
 export const SEO_CONFIG = {
   // ── Core Identity ──────────────────────────────────────────────────────
-  siteName: "Quelldesk",
+  siteName: "QuellDesk",
   domain: process.env.NEXT_PUBLIC_SITE_URL || "https://quelldesk.online",
   tagline: "AI-Powered LaTeX Resume Builder",
   description:
@@ -70,7 +70,7 @@ export const SEO_CONFIG = {
  */
 export const PAGE_SEO = {
   home: {
-    title: `${SEO_CONFIG.siteName} — ${SEO_CONFIG.tagline}`,
+    title: SEO_CONFIG.siteName,
     description: SEO_CONFIG.description,
   },
   privacy: {
