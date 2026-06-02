@@ -141,6 +141,7 @@ export default function RootLayout({
     <html
       lang={SEO_CONFIG.language}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         {/* ── DNS Prefetch & Preconnect for API microservices ─────────── */}
