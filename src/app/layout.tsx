@@ -4,6 +4,7 @@ import { SEO_CONFIG } from "@/lib/seo.config";
 import {
   WebSiteJsonLd,
   OrganizationJsonLd,
+  SiteNavigationElementJsonLd,
 } from "@/components/seo/json-ld";
 import "./globals.css";
 
@@ -145,13 +146,17 @@ export default function RootLayout({
     >
       <head>
         {/* ── DNS Prefetch & Preconnect for API microservices ─────────── */}
-        {/* TODO: Add your API domain(s) when backend services are deployed */}
-        {/* <link rel="dns-prefetch" href="https://api.quelldesk.online" /> */}
-        {/* <link rel="preconnect" href="https://api.quelldesk.online" crossOrigin="anonymous" /> */}
+        {process.env.NEXT_PUBLIC_API_URL && (
+          <>
+            <link rel="dns-prefetch" href={process.env.NEXT_PUBLIC_API_URL} />
+            <link rel="preconnect" href={process.env.NEXT_PUBLIC_API_URL} crossOrigin="anonymous" />
+          </>
+        )}
 
         {/* ── Structured Data (JSON-LD) — renders on every page ──────── */}
         <WebSiteJsonLd />
         <OrganizationJsonLd />
+        <SiteNavigationElementJsonLd />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

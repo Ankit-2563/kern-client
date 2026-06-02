@@ -99,6 +99,17 @@ export default function Home() {
             <span className="text-white/40">AI-Powered Resume compiler</span>
           </div>
 
+          {/* Bottom Middle: Navigation Links for SEO & Sitelinks */}
+          <nav className="flex items-center justify-center gap-4 sm:gap-6 text-[10px] uppercase tracking-[0.2em] font-semibold text-white/70 font-sans">
+            <a href="/privacy" className="hover:text-white transition-colors duration-200">
+              Privacy Policy
+            </a>
+            <span className="text-white/20 select-none">•</span>
+            <a href="/terms" className="hover:text-white transition-colors duration-200">
+              Terms of Service
+            </a>
+          </nav>
+
           {/* Bottom Right: High-end explanatory copy paragraph */}
           <div className="max-w-xs md:max-w-md text-right text-white/95 text-[11px] sm:text-xs leading-relaxed font-sans pr-2">
             <p>

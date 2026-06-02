@@ -157,3 +157,36 @@ export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
     />
   );
 }
+
+// ── SiteNavigationElement Schema ─────────────────────────────────────────────
+
+interface NavigationItem {
+  name: string;
+  url: string;
+}
+
+/**
+ * SiteNavigationElement schema — tells Google about key navigation paths on the site.
+ * Helps in generating sitelinks.
+ */
+export function SiteNavigationElementJsonLd() {
+  const navItems: NavigationItem[] = [
+    { name: "Home", url: "/" },
+    { name: "Privacy Policy", url: "/privacy" },
+    { name: "Terms of Service", url: "/terms" },
+  ];
+
+  return (
+    <JsonLd
+      data={{
+        "@graph": navItems.map((item, index) => ({
+          "@type": "SiteNavigationElement",
+          "@id": `${SEO_CONFIG.domain}/#nav-${index}`,
+          name: item.name,
+          url: item.url.startsWith("http") ? item.url : `${SEO_CONFIG.domain}${item.url}`,
+        })),
+      }}
+    />
+  );
+}
+
