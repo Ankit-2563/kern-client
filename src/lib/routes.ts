@@ -1,5 +1,5 @@
 // ============================================================================
-// KERN — ROUTE CONSTANTS
+// QUELLDESK — ROUTE CONSTANTS
 // Single source of truth for all application routes.
 // Used by: sitemap.ts, robots.ts, layout.tsx, navigation, breadcrumbs
 // ============================================================================

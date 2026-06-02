@@ -1,5 +1,5 @@
 // ============================================================================
-// KERN — SEO CONFIGURATION
+// QUELLDESK — SEO CONFIGURATION
 // Single source of truth for all SEO-related constants.
 // Update these values and every meta tag, OG card, JSON-LD, sitemap,
 // robots.txt, and llms.txt will automatically reflect the changes.
@@ -7,8 +7,8 @@
 
 export const SEO_CONFIG = {
   // ── Core Identity ──────────────────────────────────────────────────────
-  siteName: "Kern",
-  domain: process.env.NEXT_PUBLIC_SITE_URL || "https://kern.online",
+  siteName: "Quelldesk",
+  domain: process.env.NEXT_PUBLIC_SITE_URL || "https://quelldesk.online",
   tagline: "AI-Powered LaTeX Resume Builder",
   description:
     "Build stunning LaTeX resumes in minutes. Paste a job description, let AI write the LaTeX, compile and download — no LaTeX knowledge needed.",
@@ -38,7 +38,7 @@ export const SEO_CONFIG = {
   },
 
   // ── Twitter/X Card ─────────────────────────────────────────────────────
-  // TODO: Update when Kern has its own Twitter/X handle
+  // TODO: Update when Quelldesk has its own Twitter/X handle
   twitterHandle: "@kairosartifex",
 
   // ── Google Search Console ──────────────────────────────────────────────

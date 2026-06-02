@@ -1,5 +1,5 @@
 // ============================================================================
-// KERN — JSON-LD STRUCTURED DATA COMPONENTS
+// QUELLDESK — JSON-LD STRUCTURED DATA COMPONENTS
 // Renders <script type="application/ld+json"> for Google rich results.
 // Schema.org types: WebSite, Organization, SoftwareApplication, BreadcrumbList
 // ============================================================================
@@ -100,7 +100,7 @@ export function OrganizationJsonLd() {
 
 /**
  * SoftwareApplication schema — app listing in search results.
- * Shows Kern as a free web-based tool with a rich snippet.
+ * Shows Quelldesk as a free web-based tool with a rich snippet.
  */
 export function SoftwareApplicationJsonLd() {
   return (

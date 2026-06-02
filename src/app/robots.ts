@@ -8,7 +8,7 @@ import { SEO_CONFIG } from "@/lib/seo.config";
  * Key strategy:
  * - Block auth/app pages from all crawlers
  * - EXPLICITLY ALLOW all AI model crawlers (GPTBot, ClaudeBot, etc.)
- *   Most sites block these — allowing them gives Kern a GEO advantage.
+ *   Most sites block these — allowing them gives Quelldesk a GEO advantage.
  *
  * @see https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
  */

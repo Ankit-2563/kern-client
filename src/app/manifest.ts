@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { SEO_CONFIG } from "@/lib/seo.config";
 
 /**
- * Web App Manifest — makes Kern installable as a PWA.
+ * Web App Manifest — makes Quelldesk installable as a PWA.
  * Provides app identity, icons, and theme configuration.
  *
  * @see https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest

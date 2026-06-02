@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   // ── Title Strategy ───────────────────────────────────────────────────
   // template: child pages export { title: "Privacy Policy" }
-  //           → renders as "Privacy Policy | Kern"
+  //           → renders as "Privacy Policy | Quelldesk"
   // default: used when no child page overrides the title
   title: {
     default: `${SEO_CONFIG.siteName} — ${SEO_CONFIG.tagline}`,
@@ -145,8 +145,8 @@ export default function RootLayout({
       <head>
         {/* ── DNS Prefetch & Preconnect for API microservices ─────────── */}
         {/* TODO: Add your API domain(s) when backend services are deployed */}
-        {/* <link rel="dns-prefetch" href="https://api.kern.online" /> */}
-        {/* <link rel="preconnect" href="https://api.kern.online" crossOrigin="anonymous" /> */}
+        {/* <link rel="dns-prefetch" href="https://api.quelldesk.online" /> */}
+        {/* <link rel="preconnect" href="https://api.quelldesk.online" crossOrigin="anonymous" /> */}
 
         {/* ── Structured Data (JSON-LD) — renders on every page ──────── */}
         <WebSiteJsonLd />
