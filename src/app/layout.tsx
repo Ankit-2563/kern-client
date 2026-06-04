@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { SEO_CONFIG } from "@/lib/seo.config";
 import {
   WebSiteJsonLd,
@@ -10,15 +9,27 @@ import "./globals.css";
 
 // ── Font Loading (preloaded automatically by next/font) ──────────────────────
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
+import localFont from "next/font/local";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const layGrotesk = localFont({
+  src: [
+    {
+      path: "../../public/font/laygrotesk-trial-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/font/laygrotesk-trial-semibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/font/laygrotesk-trial-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-laygrotesk",
   display: "swap",
 });
 
@@ -140,7 +151,7 @@ export default function RootLayout({
   return (
     <html
       lang={SEO_CONFIG.language}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${layGrotesk.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
