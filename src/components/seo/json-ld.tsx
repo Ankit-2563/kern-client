@@ -50,7 +50,10 @@ export function WebSiteJsonLd() {
       data={{
         "@type": "WebSite",
         name: SEO_CONFIG.siteName,
-        alternateName: SEO_CONFIG.tagline,
+        alternateName: [
+          SEO_CONFIG.tagline,
+          ...SEO_CONFIG.alternateNames,
+        ],
         url: SEO_CONFIG.domain,
         description: SEO_CONFIG.description,
         inLanguage: SEO_CONFIG.language,
@@ -81,6 +84,7 @@ export function OrganizationJsonLd() {
       data={{
         "@type": "Organization",
         name: SEO_CONFIG.siteName,
+        alternateName: [...SEO_CONFIG.alternateNames],
         url: SEO_CONFIG.domain,
         logo: {
           "@type": "ImageObject",
@@ -108,12 +112,14 @@ export function SoftwareApplicationJsonLd() {
       data={{
         "@type": "SoftwareApplication",
         name: SEO_CONFIG.siteName,
+        alternateName: [...SEO_CONFIG.alternateNames],
         description: SEO_CONFIG.description,
         url: SEO_CONFIG.domain,
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Resume Builder",
         operatingSystem: "Web",
         browserRequirements: "Requires a modern web browser",
+        keywords: SEO_CONFIG.keywords.join(", "),
         offers: {
           "@type": "Offer",
           price: "0",
@@ -190,3 +196,32 @@ export function SiteNavigationElementJsonLd() {
   );
 }
 
+// ── FAQPage Schema ───────────────────────────────────────────────────────────
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+/**
+ * FAQPage schema — enables FAQ rich snippets in Google search results.
+ * Shows expandable Q&A directly in the SERP, increasing click-through rate.
+ * @param items - Array of { question, answer } FAQ entries
+ */
+export function FAQPageJsonLd({ items }: { items: FAQItem[] }) {
+  return (
+    <JsonLd
+      data={{
+        "@type": "FAQPage",
+        mainEntity: items.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      }}
+    />
+  );
+}

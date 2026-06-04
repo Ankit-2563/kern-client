@@ -11,9 +11,17 @@ export const SEO_CONFIG = {
   domain: process.env.NEXT_PUBLIC_SITE_URL || "https://quelldesk.online",
   tagline: "AI-Powered LaTeX Resume Builder",
   description:
-    "Build stunning LaTeX resumes in minutes. Paste a job description, let AI write the LaTeX, compile and download — no LaTeX knowledge needed.",
+    "QuellDesk (Quell Desk) is a free AI-powered LaTeX resume builder. Paste a job description, let AI write optimized LaTeX code, compile to PDF and download — no LaTeX knowledge needed. The best Overleaf alternative for job seekers.",
   locale: "en_US",
   language: "en",
+
+  // ── Brand Name Variations (for structured data alternateName) ──────────
+  alternateNames: [
+    "Quell Desk",
+    "quelldesk",
+    "quelldesk.online",
+    "Quelldesk",
+  ],
 
   // ── Brand Assets (paths relative to /public) ───────────────────────────
   ogImage: "/og/og-default.png",
@@ -45,22 +53,43 @@ export const SEO_CONFIG = {
   googleVerification: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
 
   // ── SEO Keywords ───────────────────────────────────────────────────────
+  // Brand-name variations (so Google matches "quell desk" → QuellDesk)
+  // + generic high-intent keywords users actually search for
   keywords: [
+    // Brand variations
+    "quelldesk",
+    "quell desk",
+    "quelldesk.online",
+    // Primary keywords
     "LaTeX resume builder",
     "AI resume builder",
+    "AI LaTeX resume builder",
+    "free resume builder",
     "LaTeX resume template",
     "resume from job description",
     "AI LaTeX writer",
     "ATS resume builder",
+    "ATS friendly resume",
     "LaTeX CV builder",
-    "professional resume maker",
+    // Competitor alternatives
     "overleaf resume alternative",
+    "overleaf alternative for resumes",
+    "better than overleaf for resumes",
+    // Long-tail keywords
     "AI resume generator",
+    "professional resume maker",
     "LaTeX resume online",
+    "online LaTeX resume editor",
     "job description to resume",
     "automated resume builder",
-    "LaTeX resume editor",
     "resume compiler online",
+    "create LaTeX resume without knowing LaTeX",
+    "paste job description get resume",
+    "AI powered resume writer",
+    "free LaTeX resume maker",
+    "best resume builder 2025",
+    "resume builder for software engineers",
+    "AI CV generator",
   ],
 } as const;
 
