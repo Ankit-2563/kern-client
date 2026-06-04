@@ -126,6 +126,13 @@ export function SoftwareApplicationJsonLd() {
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "184",
+          bestRating: "5",
+          worstRating: "1",
+        },
         featureList: [
           "AI-powered LaTeX resume generation from job descriptions",
           "Real-time LaTeX editor with live preview",
