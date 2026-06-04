@@ -113,8 +113,7 @@ export const metadata: Metadata = {
   // ── Icons ────────────────────────────────────────────────────────────
   icons: {
     icon: [
-      { url: SEO_CONFIG.favicon16, sizes: "16x16", type: "image/png" },
-      { url: SEO_CONFIG.favicon32, sizes: "32x32", type: "image/png" },
+      { url: SEO_CONFIG.favicon, type: "image/svg+xml" },
     ],
     apple: [
       { url: SEO_CONFIG.appleTouchIcon, sizes: "180x180", type: "image/png" },

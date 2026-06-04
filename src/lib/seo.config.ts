@@ -24,13 +24,12 @@ export const SEO_CONFIG = {
   ],
 
   // ── Brand Assets (paths relative to /public) ───────────────────────────
-  ogImage: "/og/og-default.png",
+  ogImage: "/og/og-img.png",
   logo: "/brand/logo.svg",
   logoPng512: "/brand/logo-512.png",
   logoPng192: "/brand/logo-192.png",
   appleTouchIcon: "/brand/logo-180.png",
-  favicon32: "/brand/favicon-32.png",
-  favicon16: "/brand/favicon-16.png",
+  favicon: "/brand/icon.svg",
 
   // ── Brand Colors ───────────────────────────────────────────────────────
   // TODO: Replace with your actual brand colors

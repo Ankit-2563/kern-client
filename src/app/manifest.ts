@@ -20,14 +20,15 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["productivity", "utilities", "business"],
     icons: [
       {
-        src: SEO_CONFIG.favicon16,
-        sizes: "16x16",
-        type: "image/png",
+        src: SEO_CONFIG.favicon,
+        sizes: "any",
+        type: "image/svg+xml",
       },
       {
-        src: SEO_CONFIG.favicon32,
-        sizes: "32x32",
-        type: "image/png",
+        src: SEO_CONFIG.logo,
+        sizes: "any",
+        type: "image/svg+xml",
+        purpose: "any",
       },
       {
         src: SEO_CONFIG.logoPng192,
