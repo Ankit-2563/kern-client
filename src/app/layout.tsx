@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   //           → renders as "Privacy Policy | QuellDesk"
   // default: used when no child page overrides the title
   title: {
-    default: `${SEO_CONFIG.siteName} — Free AI-Powered LaTeX Resume Builder`,
+    default: `${SEO_CONFIG.siteName} | Free AI-Powered LaTeX Resume Builder`,
     template: `%s | ${SEO_CONFIG.siteName}`,
   },
 
