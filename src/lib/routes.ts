@@ -7,6 +7,7 @@
 export const ROUTES = {
   // Public pages (indexed by search engines)
   HOME: "/",
+  REGISTER: "/register",
   PRIVACY: "/privacy",
   TERMS: "/terms",
 
@@ -28,6 +29,7 @@ export type RoutePath = (typeof ROUTES)[RouteKey];
  */
 export const PUBLIC_ROUTES = [
   ROUTES.HOME,
+  ROUTES.REGISTER,
   ROUTES.PRIVACY,
   ROUTES.TERMS,
 ] as const;
