@@ -110,7 +110,7 @@ export const PAGE_SEO = {
     description: `Read the terms and conditions for using ${SEO_CONFIG.siteName}. By using our AI-powered LaTeX resume builder, you agree to these terms.`,
   },
   register: {
-    title: "Join the Waitlist / Early Access",
+    title: "Join the Waitlist | Early Access",
     description: `Get early access to ${SEO_CONFIG.siteName}, the free AI-powered LaTeX resume builder. Sign up now to design outstanding professional resumes.`,
   },
 } as const;
