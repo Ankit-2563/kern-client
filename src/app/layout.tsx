@@ -6,6 +6,7 @@ import {
   SiteNavigationElementJsonLd,
 } from "@/components/seo/json-ld";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 // ── Font Loading (preloaded automatically by next/font) ──────────────────────
 
@@ -168,7 +169,10 @@ export default function RootLayout({
         <OrganizationJsonLd />
         <SiteNavigationElementJsonLd />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Toaster richColors position="top-right" />
+      </body>
     </html>
   );
 }
