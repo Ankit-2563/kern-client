@@ -11,7 +11,7 @@ export const SEO_CONFIG = {
   domain: process.env.NEXT_PUBLIC_SITE_URL || "https://quelldesk.online",
   tagline: "AI-Powered LaTeX Resume Builder",
   description:
-    "QuellDesk (Quell Desk) is a free AI-powered LaTeX resume builder. Paste a job description, let AI write optimized LaTeX code, compile to PDF and download — no LaTeX knowledge needed. The best Overleaf alternative for job seekers.",
+    "QuellDesk (Quell Desk) is a free AI-powered LaTeX resume builder. Paste a job description to get optimized LaTeX resumes. The ultimate Overleaf alternative.",
   locale: "en_US",
   language: "en",
 

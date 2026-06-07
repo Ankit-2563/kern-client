@@ -40,9 +40,9 @@ export default function Home() {
           </div>
 
           {/* Title Line 1: Governed AI, */}
-          <h2 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[128px] font-normal tracking-tight leading-none select-none">
+          <h1 className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[128px] font-normal tracking-tight leading-none select-none">
             Governed AI,
-          </h2>
+          </h1>
 
           {/* Subheading row containing description and Title Line 2 */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 lg:gap-12 mt-4 lg:mt-16">
